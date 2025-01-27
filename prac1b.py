@@ -17,7 +17,7 @@ def plot_spectrogram(data, filename):
     img = Image.fromarray(np.uint8(255 * data / np.max(data)))  # Normalize and convert to 8-bit
     img = img.resize((800, 400))  # Resize for better visibility
     img.save(filename)
-    img.show()
+    # img.show()
 
 # Plot and save the spectrogram
 plot_spectrogram(Sxx, "spectrogram.png")
